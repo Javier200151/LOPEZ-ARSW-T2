@@ -59,7 +59,9 @@ public class CityWeatherServicesimpl implements CityWeatherServices{
 
         int visibility = jcity.getInt("visibility");
 
-        return new City(clouds, coord, main, sys, weather, wind, base, visibility, dt, timezone, id, name);
+        int cod = jcity.getInt("cod");
+
+        return new City(coord, weather, base, main, visibility, wind, clouds, dt, sys, timezone, id, name, cod);
     }
 
    

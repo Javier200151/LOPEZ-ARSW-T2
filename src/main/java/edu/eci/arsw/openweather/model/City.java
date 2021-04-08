@@ -9,9 +9,9 @@ public class City {
     private Wind wind;
     private String base, name;
     private long dt;
-    private int visibility, timezone, id;
+    private int visibility, timezone, id, cod;
 
-    public City(Clouds clouds, Coord coord, Main main, Sys sys, Weather weather, Wind wind, String base, int visibility, long dt,  int timezone, int id, String name) {
+    public City(Coord coord, Weather weather, String base, Main main, int visibility, Wind wind, Clouds clouds, long dt, Sys sys,  int timezone, int id, String name, int cod) {
         this.setClouds(clouds);
         this.setCoord(coord);
         this.setWeather(weather);
@@ -24,6 +24,7 @@ public class City {
         this.setTimezone(timezone);
         this.setId(id);
         this.setName(name);
+        this.setCod(cod);
 	}
 
     public City() {
@@ -36,6 +37,14 @@ public class City {
     
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getCod() {
+        return cod;
+    }
+    
+    public void setCod(int cod) {
+        this.id = cod;
     }
 
     public int getTimezone() {
