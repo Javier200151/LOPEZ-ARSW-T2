@@ -38,3 +38,6 @@ $ mvn spring-boot:run
 
 ## Despliegue en Heroku:
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://lopez-arsw-t2.herokuapp.com)
+
+# Extensibilidad
+Lo que lo hace extensible es su bajo acoplamiento entre clases permitiendo la creación o inserción de nuevas funcionabilidades que requieran entidades e implementaciones nuevas. Por otra parte el backend es facilmente adaptable un frontend diferente, pues si estos se separán se puede adaptar a un aplicativo movil

@@ -1,5 +1,9 @@
 package edu.eci.arsw.openweather.model;
 
+/**
+ * @author: Javier E. López
+ * @version: 08/04/2021 [ParcialT2]
+ */
 public class City {
     private Coord coord;
     private Weather weather;

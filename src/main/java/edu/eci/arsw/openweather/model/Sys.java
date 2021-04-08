@@ -2,6 +2,10 @@ package edu.eci.arsw.openweather.model;
 
 import java.io.Serializable;
 
+/**
+ * @author: Javier E. López
+ * @version: 08/04/2021 [ParcialT2]
+ */
 public class Sys implements Serializable {
     private int type, id;
     private String country;

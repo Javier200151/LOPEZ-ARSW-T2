@@ -13,6 +13,10 @@ import edu.eci.arsw.openweather.model.*;
 import edu.eci.arsw.openweather.service.CityWeatherServices;
 import edu.eci.arsw.openweather.service.HTTPServices;
 
+/**
+ * @author: Javier E. López
+ * @version: 08/04/2021 [ParcialT2]
+ */
 @Service
 public class CityWeatherServicesimpl implements CityWeatherServices{
     @Autowired
@@ -20,12 +24,21 @@ public class CityWeatherServicesimpl implements CityWeatherServices{
 
     public CityWeatherServicesimpl(){}
 
+    /**
+     * Obtener el JSON directamente 
+     * @param city String, ciudad que se desea buscar
+     * @return JSON obtenido de la conexión 
+     */
     @Override
     public JSONObject getWeatherByCity(String city) throws UnirestException, IOException {
         JSONObject cityWeather=httpService.connection(city);
         return cityWeather;
     }
-
+    /**
+     * Setear las variables obtenidas del JSON a los objetos respectivos
+     * @param jcity JSONObject, formato de la información del clima recibida de la ciudad buscada
+     * @return nueva ciudad que representa el objeto con cada componente del JSON
+     */
     @Override
     public City setWeatherByCity(JSONObject jcity) throws UnirestException, IOException {
         JSONObject jsonObject = jcity.getJSONObject("coord");
