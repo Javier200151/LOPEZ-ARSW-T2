@@ -20,7 +20,7 @@ git clone https://github.com/Javier200151/LOPEZ-ARSW-T2
 $ cd openweather
  ```
 Descargaremos y compilaremos el proyecto con el siguiente comando
-// Este comando nos descargara la dependencias necesarias
+\ Este comando nos descargara la dependencias necesarias
 
  ```sh
 $ mvn package
