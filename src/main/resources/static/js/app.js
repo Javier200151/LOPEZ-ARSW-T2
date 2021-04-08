@@ -23,7 +23,7 @@ app = (function (){
         $("#lbltmpmin").text("Temp min: "+data.main.temp_min);
         $("#lbltmpmax").text("Temp max: "+data.main.temp_max);
         $("#lblpress").text("Pressure: "+data.main.pressure);
-        $("#lblhumed").text("humidity: "+data.main.humidity);
+        $("#lblhumed").text("Humidity: "+data.main.humidity);
         $("#lblspeed").text("Speed: "+data.sys.temp);
         $("#lbldeg").text("Deg: "+data.sys.id);
         $("#lbltype").text("Type: "+data.wind.speed);
