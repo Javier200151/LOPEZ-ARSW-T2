@@ -41,7 +41,7 @@ app = (function (){
     function _initMap(data){
         map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: data.coord.lat, lng: data.coord.lon},
-            zoom: 8
+            zoom: 10
         });
         plotMarkers(data);
     }
