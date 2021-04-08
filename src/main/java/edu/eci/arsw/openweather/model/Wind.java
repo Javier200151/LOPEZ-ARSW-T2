@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class Wind implements Serializable {
     private double speed;
-    private double deg;
+    private int deg;
 
-    public Wind(double speed, double deg) {
+    public Wind(double speed, int deg) {
         this.speed = speed;
         this.deg = deg;
     }
@@ -15,11 +15,11 @@ public class Wind implements Serializable {
 
     }
 
-    public double getDeg() {
+    public int getDeg() {
         return deg;
     }
 
-    public void setDeg(double deg) {
+    public void setDeg(int deg) {
         this.deg = deg;
     }
 
