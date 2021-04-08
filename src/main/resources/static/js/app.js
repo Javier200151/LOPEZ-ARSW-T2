@@ -7,7 +7,7 @@ app = (function (){
     function _updateData(data){
         $("#lblname").text("City: "+data.name);
         $("#lblid").text("Id: "+data.id);
-        $("#lbltimezone").text("City: "+data.timezone);
+        $("#lbltimezone").text("Timezone: "+data.timezone);
         $("#lbldt").text("Dt: "+data.dt);
         $("#lblclouds").text("Clouds: "+data.clouds.all);
         $("#lblvisibility").text("Visibility: "+data.visibility);
