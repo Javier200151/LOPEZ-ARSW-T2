@@ -24,7 +24,7 @@ app = (function (){
         $("#lbltmpmax").text("Temp max: "+data.main.temp_max);
         $("#lblpress").text("Pressure: "+data.main.pressure);
         $("#lblhumed").text("Humidity: "+data.main.humidity);
-        $("#lblspeed").text("Speed: "+data.sys.temp);
+        $("#lblspeed").text("Speed: "+data.wind.speed);
         $("#lbldeg").text("Deg: "+data.wind.deg);
         $("#lbltype").text("Type: "+data.sys.type);
         $("#lblSYSid").text("Id: "+data.sys.id);
