@@ -44,7 +44,7 @@ public class City {
     }
     
     public void setCod(int cod) {
-        this.id = cod;
+        this.cod = cod;
     }
 
     public int getTimezone() {
