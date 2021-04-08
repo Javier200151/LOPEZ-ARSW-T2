@@ -16,20 +16,20 @@
     </style>
 </head>
 
-    <body>
+    <body id=bodypage>
        <h1 class="card-title col-12 text-white bg-dark">OpenWeather</h1>
-        <div class="row col-12 p-3">
+        <div class="row justify-content-md-center col-12 p-3" id="buttoncontainer">
             <form>
                <div class="input-group ml-4">
                    
-                    <input class="form-control col-5 m-2" placeholder="Input City Name" id="city"/>
-                    <button class="btn btn-success" type="button" onclick="app.conectWeatherByCity(city.value)">Search</button>
+                    <input class="form-control col-5 m-2 " placeholder="Input City Name" id="city"/>
+                    <button class="btn btn-light col-3 m-2" type="button" onclick="app.conectWeatherByCity(city.value)">Search</button>
                 </div>
             </form>
         </div>
        <div class="container-fluid" id="infow" style="visibility: hidden">
-           <div class="row col-12">
-               <div class="card mb-grid col-2 m-4">
+           <div class="row justify-content-md-center col-12">
+               <div class="card bg-dark text-white col-2 m-4">
                    <div class="card-header text-center">
                        <h5>General</h5>
                    </div>
@@ -43,7 +43,7 @@
                        <label class="col-12" id="lblbase"></label>
                    </div>
                </div>
-               <div class="card mb-grid col-2 m-4">
+               <div class="card bg-dark text-white col-2 m-4">
                    <div class="card-header text-center">
                        <h5>Coordinates</h5>
                    </div>
@@ -52,7 +52,7 @@
                        <label class="col-12" id="lbllon"></label>
                    </div>
                </div>
-               <div class="card mb-grid col-2 m-4">
+               <div class="card bg-dark text-white col-2 m-4">
                 <div class="card-header text-center">
                     <h5> Weather</h5>
                 </div>
@@ -64,9 +64,9 @@
                 </div>
             </div>
            </div>
-           <div class="row col-12">
+           <div class="row justify-content-md-center col-12">
                
-               <div class="card mb-grid col-2 m-4">
+               <div class="card bg-dark text-white col-2 m-4">
                    <div class="card-header text-center">
                        <h5>Main</h5>
                    </div>
@@ -79,7 +79,7 @@
                        <label class="col-12" id="lblhumed"></label>
                    </div>
                </div>
-               <div class="card mb-grid col-2 m-4">
+               <div class="card bg-dark text-white col-2 m-4">
                 <div class="card-header text-center">
                     <h5>Wind</h5>
                 </div>
@@ -88,7 +88,7 @@
                     <label class="col-12" id="lbldeg"></label>
                 </div>
             </div>
-            <div class="card mb-grid col-2 m-4">
+            <div class="card bg-dark text-white col-2 m-4">
                 <div class="card-header text-center">
                     <h5>Sys</h5>
                 </div>
@@ -112,7 +112,14 @@
         #infow {
             background-color: rgb(126, 126, 126);
         }
+        
+        #buttoncontainer{
+            background-color: rgb(126, 126, 126);
+        }
+        
+        #bodypage{
+            background-color: rgb(126, 126, 126);
+        }
         </style>
-
     </body>
 </html>
