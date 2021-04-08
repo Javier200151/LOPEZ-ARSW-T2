@@ -25,9 +25,9 @@ app = (function (){
         $("#lblpress").text("Pressure: "+data.main.pressure);
         $("#lblhumed").text("Humidity: "+data.main.humidity);
         $("#lblspeed").text("Speed: "+data.sys.temp);
-        $("#lbldeg").text("Deg: "+data.sys.id);
-        $("#lbltype").text("Type: "+data.wind.speed);
-        $("#lblSYSid").text("Id: "+data.wind.deg);
+        $("#lbldeg").text("Deg: "+data.wind.deg);
+        $("#lbltype").text("Type: "+data.sys.type);
+        $("#lblSYSid").text("Id: "+data.sys.id);
         $("#lblcountry").text("Country: "+data.sys.country);
         $("#lblsunrise").text("Sunrise: "+data.sys.sunrise);
         $("#lblsunset").text("Sunset: "+data.sys.sunset);
