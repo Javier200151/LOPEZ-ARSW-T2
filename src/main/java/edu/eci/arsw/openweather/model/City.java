@@ -1,15 +1,18 @@
 package edu.eci.arsw.openweather.model;
 
 public class City {
-    private Clouds clouds;
     private Coord coord;
-    private Main main;
-    private Sys sys;
     private Weather weather;
+    private String base;
+    private Main main;
+    private int visibility;
     private Wind wind;
-    private String base, name;
+    private Clouds clouds;
     private long dt;
-    private int visibility, timezone, id, cod;
+    private Sys sys;
+    private int timezone, id;
+    private String name;
+    private int cod;
 
     public City(Coord coord, Weather weather, String base, Main main, int visibility, Wind wind, Clouds clouds, long dt, Sys sys,  int timezone, int id, String name, int cod) {
         this.setClouds(clouds);
