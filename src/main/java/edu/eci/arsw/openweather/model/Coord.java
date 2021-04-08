@@ -18,18 +18,34 @@ public class Coord implements Serializable{
         
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getLon() {
         return lon;
     }
 
+    
+    /** 
+     * @param lon
+     */
     public void setLon(double lon) {
         this.lon = lon;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getLat() {
         return lat;
     }
 
+    
+    /** 
+     * @param lat
+     */
     public void setLat(double lat) {
         this.lat = lat;
     }

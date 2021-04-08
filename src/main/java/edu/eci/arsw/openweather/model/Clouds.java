@@ -16,10 +16,18 @@ public class Clouds implements Serializable{
 
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getAll() {
         return all;
     }
 
+    
+    /** 
+     * @param all
+     */
     public void setAll(int all) {
         this.all = all;
     }

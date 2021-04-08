@@ -19,18 +19,34 @@ public class Wind implements Serializable {
 
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getDeg() {
         return deg;
     }
 
+    
+    /** 
+     * @param deg
+     */
     public void setDeg(int deg) {
         this.deg = deg;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getSpeed() {
         return speed;
     }
 
+    
+    /** 
+     * @param speed
+     */
     public void setSpeed(double speed) {
         this.speed = speed;
     }

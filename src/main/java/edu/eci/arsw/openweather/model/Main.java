@@ -23,50 +23,98 @@ public class Main implements Serializable {
         
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getTemp() {
         return temp;
     }
 
+    
+    /** 
+     * @param temp
+     */
     public void setTemp(double temp) {
         this.temp = temp;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getFeels_like() {
         return feels_like;
     }
 
+    
+    /** 
+     * @param feels_like
+     */
     public void setFeels_like(double feels_like) {
         this.feels_like = feels_like;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getTemp_min() {
         return temp_min;
     }
 
+    
+    /** 
+     * @param temp_min
+     */
     public void setTemp_min(double temp_min) {
         this.temp_min = temp_min;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getTemp_max() {
         return temp_max;
     }
 
+    
+    /** 
+     * @param temp_max
+     */
     public void setTemp_max(double temp_max) {
         this.temp_max = temp_max;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getPressure() {
         return pressure;
     }
 
+    
+    /** 
+     * @param pressure
+     */
     public void setPressure(int pressure) {
         this.pressure = pressure;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getHumidity() {
         return humidity;
     }
 
+    
+    /** 
+     * @param humidity
+     */
     public void setHumidity(int humidity) {
         this.humidity = humidity;
     }
